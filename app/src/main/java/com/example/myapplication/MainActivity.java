@@ -2,11 +2,13 @@ package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
+    private static final int SECRET_KEY = 99;
     /**Username és Password beolvasó változók az EditText mezőből */
     EditText userNameReader;
     EditText passwordReader;
@@ -33,7 +35,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void LoginWithFacebook(View view) {
     }
-
+    /**REgisztráció intentje, ezzel aktiváljuk a RegistrationActivity-t */
     public void register(View view) {
+        Intent registerIntent = new Intent(this, RegistrationActivity.class);
+        registerIntent.putExtra("SECRET_KEY", 99);
+        startActivity(registerIntent);
     }
 }
