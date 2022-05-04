@@ -71,6 +71,17 @@
         android:inputType="textPassword"
         tools:layout_editor_absoluteX="16dp" />
 
+    <EditText
+        android:id="@+id/editTextPasswordRepeat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="40dp"
+        android:layout_marginTop="20dp"
+        android:hint="@string/password_again"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="16dp" />
+
     <Button
         android:id="@+id/Register"
         android:layout_width="match_parent"
